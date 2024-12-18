@@ -1,8 +1,14 @@
+import java.io.File;
+
 public class Main {
     public static void main(String[] args) {
-        Person person = new Person("Joan", "Pérez", 30);
+        // Crear una instancia de Persona
+        Person one = new Person("Ezequiel", "Macchi", 45);
 
-        // Llamar al metodo estático genérico con diferentes tipos de parámetros
-        GenericMethods.genericMethod(person, "Hola", 25);
+        // Llamar al método genérico con diferentes tipos de parámetros
+        String result = GenericMethods.genericMethod("Ezequiel", one, new File("cosmonaut_mission.dat"));
+
+        // Imprimir el resultado
+        System.out.println(result);
     }
 }

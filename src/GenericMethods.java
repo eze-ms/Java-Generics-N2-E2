@@ -1,9 +1,7 @@
 public class GenericMethods {
 
-    // Metodo genérico que acepta tres parámetros de tipos distintos
-    static <T, V, K> void genericMethod(T t, V v, K k) {
-        System.out.println("Argumento 1: " + t);
-        System.out.println("Argumento 2: " + v);
-        System.out.println("Argumento 3: " + k);
+    // Método genérico que acepta un parámetro específico (String) y dos genéricos
+    static <T, V> String genericMethod(String s, T t, V v) {
+        return s + "\n" + t + "\n" + v;
     }
 }
