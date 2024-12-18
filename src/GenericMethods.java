@@ -1,7 +1,8 @@
 public class GenericMethods {
 
-    // Método genérico que acepta un parámetro específico (String) y dos genéricos
-    static <T, V> String genericMethod(String s, T t, V v) {
-        return s + "\n" + t + "\n" + v;
+    // Método genérico que acepta una cantidad indefinida de parámetros
+    @SafeVarargs
+    static <T> T[] genericMethod(T... args) {
+        return args; // Retorna los argumentos como un array
     }
 }
