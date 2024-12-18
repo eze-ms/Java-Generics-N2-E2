@@ -28,4 +28,4 @@ This exercise in Java involves creating a `Person` class with attributes like na
 ## 🛠️ Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/eze-ms/GenericMethods-Exercise
+   git clone https://github.com/eze-ms/Java-Generics-N2-E2
